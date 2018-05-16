@@ -1,7 +1,47 @@
 .rps {
   background: linear-gradient(rgb(6, 31, 29), rgb(3, 85, 77));
+  overflow: scroll;
 }
 
 h1, h2 {
   color: white;
 }
+
+#rock {
+  height: 10%;
+  width: 20%;
+  padding: 10px;
+  float: right;
+}
+/* 
+#paper {
+  height: 240px;
+  width: 80px;
+} */
+
+/* #scissors {
+  height: 240px;
+  width: 80px;
+} */
+
+#choices {
+ text-align: right;
+ padding-right: 40px;
+}
+#results {
+  text-align: right;
+  padding-right: 40px;
+}
+
+#my_score {
+  text-align: right;
+  padding-right: 40px;
+}
+#score {
+  text-align: right;
+ padding-right: 40px;
+}
+
+
+
+

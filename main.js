@@ -20,6 +20,7 @@ $(document).ready( function(){
       $('#results')
         .html('You are a winner!!')
         .css({
+          //css styling for the result goes here
 
         })
       $('#my_score').html("Your Score:" + my_score++)
