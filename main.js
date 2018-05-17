@@ -8,8 +8,10 @@ $(document).ready( function(){
 
     if (random ==='Paper'){
       $('#choices').html('Computer chose paper')
+      $('#choices').css("color", "white")
       $('#results').html('You lost!')
       $('#score').html("Computer's Score:" + score++)
+      $('#score').css("color", "rgb(230, 154, 227)")
     }
     else if (random ==='Rock'){
       $('#choices').html('Computer chose rock')
@@ -17,13 +19,10 @@ $(document).ready( function(){
     }
     else if (random ==='Scissors'){
       $('#choices').html('Computer chose scissors')
-      $('#results')
-        .html('You are a winner!!')
-        .css({
-          //css styling for the result goes here
-
-        })
+      $('#results').html('You are a winner!!')
+      $('#results').css("color", "rgb(208, 37, 174)")
       $('#my_score').html("Your Score:" + my_score++)
+      $('#my_score').css("color", "rgb(230, 154, 227)")
     }
   })
       
@@ -42,6 +41,7 @@ $(document).ready( function(){
     else if (random ==='Rock'){
       $('#choices').html('The computer chose Rock')
       $('#results').html("It's your lucky day, you win!")
+      $('#results').css("color", "rgb(208, 37, 174)")
       $('#my_score').html('Your Score:' + my_score++)
     }
   })

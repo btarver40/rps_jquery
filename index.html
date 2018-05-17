@@ -1,33 +1,70 @@
 <html>
 <heady>
+  <!--meta data is important to put-->
   <title>Rock,Paper,Scissors</title>
   <link rel="stylesheet" href="style.css"/>
+  
 </heady>
 <body class="rps">
-  <h1 class="title">Rock, Paper, Scissors</h1>
-  <h2 class="play">Click any image to play!</h2>
-  
-  <div class="photos">
+  <div class="headers" >
+    <h1 class="title">Rock, Paper, Scissors</h1>
+    <h3 class="play">Click any image to play!</h3>
+  </div>
+  <div id="pics" class="photos">
       <button id="rock">
-        <img alt="rock" src="/Users/biancatarver/Devpoint2018/Save/rps_jquery/photos/thor-ragnarok-korg-1040344 (1).jpg"/>
+        <img class="rock1" alt="rock" src="/Users/biancatarver/Devpoint2018/Save/rps_jquery/photos/thor-ragnarok-korg-1040344 (1).jpg"/>
       </button>
       
       <button id="paper">
-        <img alt="paper" src="/Users/biancatarver/Devpoint2018/Save/rps_jquery/photos/jack-daniels-sippin-whiskey.jpg"/>
+        <img class="paper1" alt="paper" src="/Users/biancatarver/Devpoint2018/Save/rps_jquery/photos/jack-daniels-sippin-whiskey.jpg"/>
       </button>
       
       <button id="scissors">
-        <img alt="scissors" src="/Users/biancatarver/Devpoint2018/Save/rps/photos/Gold.jpg"/>
+        <img class="scissors1" alt="scissors" src="/Users/biancatarver/Devpoint2018/Save/rps/photos/Gold.jpg"/>
       </button>
     </div>
-
+  <div id="output" class="gameresults">
     <h1 id="choices"></h1>
     <h1 id="results"></h1>
     <h2 id="my_score">Your Score:</h2>
     <h2 id="score">Computer's Score:</h2>
+  </div>
 
 
 <script src="jquery-3.3.1.min.js"></script>
 <script src="main.js"></script>
  </body>
 </html>
+
+
+
+<!--
+  CSS
+  margin 0, auto;
+  will center the object of its parent
+  margin 20px; auto will push the content away from top
+  to bottom
+  border: solid 3px thick and black 
+
+  do a div class="container" that wraps all the content
+  so you can do a container with:
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  make a file called grid.css
+  then make a grid.html
+  .row:before,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  col-2 will take up 2 columns
+  [class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 8.33%
+  }
+
+-->

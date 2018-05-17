@@ -1,47 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .rps {
-  background: linear-gradient(rgb(6, 31, 29), rgb(3, 85, 77));
+  background: linear-gradient(rgb(163, 164, 174), rgb(3, 1, 9));
   overflow: scroll;
 }
 
-h1, h2 {
+.headers {
+  border: 3px solid black;
+  background-color: black;
+  font-size: 30px;
   color: white;
+  text-align: center;
+  padding: 30px;
 }
 
-#rock {
-  height: 10%;
-  width: 20%;
-  padding: 10px;
-  float: right;
+.photos {
+  /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 30px;
 }
-/* 
-#paper {
-  height: 240px;
-  width: 80px;
-} */
-
-/* #scissors {
-  height: 240px;
-  width: 80px;
-} */
-
-#choices {
- text-align: right;
- padding-right: 40px;
+.rock1 {
+  border: 3px solid black;
+  width: 300px;
+  height: 300px;
+  display: block;
+  /* flex-direction: column;
+  justify-content: space-between; */
+  border-radius: 50%;
+  
 }
-#results {
-  text-align: right;
-  padding-right: 40px;
+.paper1 {
+  border: 3px solid black;
+  width: 300px;
+  height: 300px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  border-radius: 50%;
+}
+.scissors1 {
+  border: 3px solid black;
+  width: 300px;
+  height: 300px; 
+  /*display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between; */
+  border-radius: 50%;
+}
+
+.gameresults {
+  border: 5px solid black;
+  overflow: scroll;
+ margin: 20px;
+ float: right;
+}
+
+button {
+  border-radius: 50%;
 }
 
 #my_score {
-  text-align: right;
-  padding-right: 40px;
+color: white;
+font-size: 20px;
 }
 #score {
-  text-align: right;
- padding-right: 40px;
+color: white;
+font-size: 20px;
 }
-
-
-
-
