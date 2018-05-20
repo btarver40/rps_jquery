@@ -12,6 +12,7 @@ $(document).ready( function(){
       $('#results').html('You lost!')
       $('#score').html("Computer's Score:" + score++)
       $('#score').css("color", "rgb(230, 154, 227)")
+      $('#score').html("")
     }
     else if (random ==='Rock'){
       $('#choices').html('Computer chose rock')
